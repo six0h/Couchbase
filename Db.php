@@ -33,15 +33,6 @@ class In_Couchbase_Db
     	return self::$connectionKeys;
     }
 
-	/**
-	* main method to get the instance of the connected Db adapter
-	*
-	* To enable code Auto Complete, In_Db::getInstance() explicitly returns In_Db_Adapter_Mysqli type.
-	* This won't work out if later we have other kinds of adapters (such as Oracle...)
-	*
-	* @param string $connectionInfo - contains the adapter name and all config info, set in conf file
-	* @return In_Mongo_Db
-	*/
 	public static function getInstance($keyName = 'DEFAULT')
 	{
 		$connectionInfoStr = '';
