@@ -6,7 +6,7 @@ Couchbase Abstraction for HootSuite
 - There is a config file with the following line to config a key for the singleton instance below:
 
         //init Couchbase
-        In_Couchbase_Db::setKey('DEFAULT', array("conn"=>IN_COUCHBASE_HOSTS, "options"=>array(), "dbname"=>"default", "username"=>"default", "password"=>"", "bucket"=>"default"));
+        In_Couchbase_Db::setKey('DEFAULT', array("conn"=>IN_COUCHBASE_HOSTS, "options"=>array(),  "username"=>"", "password"=>"", "bucket"=>"default"));
 
 
 - Db.php is the base class.
