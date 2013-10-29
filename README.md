@@ -10,7 +10,7 @@ Couchbase Abstraction for HootSuite
 
 
 - Db.php is the base class.
-This is a singleton that either starts a new connection, or grabs an existing connection if one has already been created. We currently only use one bucket 'default', so not specifying a key just defaults to our 'DEFAULT'. This seems to be working well, I don't believe the issue lies here.
+This is a singleton that either starts a new connection, or grabs an existing connection if one has already been created. We currently only use one bucket 'default', so not specifying a key uses the default bucket. This seems to be working well, I don't believe the issue lies here.
 
 - Bucket.php is an abstraction class.
 This will grab a singleton connection through the In_Couchbase_Db class, it allows you to set a design document and view from there.
