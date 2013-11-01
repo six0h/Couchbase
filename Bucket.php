@@ -17,9 +17,9 @@ class In_Couchbase_Bucket extends In_Couchbase_Db {
     protected $instanceKey; // Current cluster / instance
 
     // Map of buckets to clusters/instances 
-    protected $bucketKeys   = array('default' => 'DEFAULT');
+    protected $bucketKeys   = array('autocomplete' => 'DEFAULT');
 
-    public function __construct($bucket = 'default') {
+    public function __construct($bucket = 'autocomplete') {
         $this->bucket       = $bucket;
         $this->instanceKey  = $this->bucketKeys[$bucket];
         $this->cb           = parent::getInstance($this->instanceKey); 

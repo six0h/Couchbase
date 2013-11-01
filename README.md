@@ -3,6 +3,9 @@ Couchbase
 
 Couchbase Abstraction for HootSuite
 
+All of these classes are located in 'In/Couchbase/';
+They are called using the pear convention as In_Couchbase_Db.php etc...
+
 - There is a config file with the following line to config a key for the singleton instance below:
 
         //init Couchbase
